@@ -1,0 +1,40 @@
+.navbar-toggler{
+  border: none !important;
+  font-size: 1.25em;
+}
+.nav-item > .active{
+  border-bottom: 3px solid rgb(0, 229, 255);
+}
+.nav-item :hover{
+  border-bottom: 3px solid rgb(0, 229, 255);
+}
+.navbar{
+  background-color: white;
+  border-radius: 30px ;
+}
+
+.login {
+    min-height: 100vh;
+  }
+  
+  .bg-image {
+    background-image: url('assets/container-1.webp');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-heading {
+    font-weight: 300;
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+  select{
+    margin: 20px !important;
+    border: 2px gray solid;
+    width: 200px;
+    padding: 10px;
+  }
