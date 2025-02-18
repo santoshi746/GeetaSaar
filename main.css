@@ -330,11 +330,6 @@
         padding-right: 0px;
         padding-left: 0px;
     }
-    #img_about{
-        width: 230px;
-        height: 200px;
-        margin: 10px;
-    }
 }
 /*For large devices*/
 @media screen and (min-width:1120px){
