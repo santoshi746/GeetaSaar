@@ -128,3 +128,10 @@ sup{
       display: block;
   }
 }
+
+@media screen and (max-width:425px){
+#inter_img{
+  width: 400px;
+  height: 400px;
+}
+}
