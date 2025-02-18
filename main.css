@@ -325,7 +325,7 @@
     }
 }
 /*Andriod*/
-@media screen and (max-width: 420px){
+@media screen and (min-width: 420px){
     #img_col{
         padding-right: 0px;
         padding-left: 0px;
