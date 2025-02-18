@@ -30,6 +30,10 @@
     height: 80vh;
     position: relative;
 }
+#img_about{
+    width: 600px;
+    height: 400px;
+  }
 .container-one-content{
     position: absolute;
     top: 200px;
