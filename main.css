@@ -324,6 +324,7 @@
         column-gap:1.5rem
     }
 }
+/*Andriod*/
 @media screen and (max-width: 420px){
     #img_col{
         padding-right: 0px;
