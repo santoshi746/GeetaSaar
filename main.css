@@ -19,6 +19,7 @@
     height: 50px;
 
 }
+
 .navbar{
     background-color: white;
     border-radius: 30px ;
@@ -27,13 +28,9 @@
     background: url("./assets/container-2.webp") no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     position: relative;
 }
-#img_about{
-    width: 600px;
-    height: 400px;
-  }
 .container-one-content{
     position: absolute;
     top: 200px;
@@ -41,15 +38,18 @@
     width: 400px;
     height: 300px;
     left: 200px;
-    padding: 40px;
+    padding: 30px;
     border-radius: 30px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-
+#about-para{
+    text-align: justify;
+  text-justify: inter-word;
+}
 .container-two{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     padding-left: 40px ;
     padding-right: 40px;
     margin: 50px !important;
@@ -57,71 +57,10 @@
 .about{
     color: orange;
 }
-.container-three{
-    display: grid;
-    place-items: center;
-    margin-inline: 1.5rem;
-    padding-block: 5rem;
-}
-.card__container{
-    display: grid;
-    row-gap: 3.5rem;
-}
-.card__article{
-    border: 4px solid orange;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.card__img{
-    width: 328px !important;
-    border-radius: 1.5rem;
-    height: 328px;
-}
-.card__data{
-    width: 280px;
-    background-color: #fff;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0,0%,0%,.15);
-    border-radius: 1rem;
-    position: absolute;
-    bottom: -9rem;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    opacity: 0;
-    transition: opacity 1s 1s;
-} 
-.card__description{
-    display: block;
-    font-size: 15px;
-    margin-bottom: .75rem;
-}
-.card__button{
-    text-decoration: none;
-    font-size: var(--small-font-size);
-    font-weight: 500;
-    color: var(--first-color);
-}
-.card__button:hover{
-    text-decoration: underline;
-}
-.card__article:hover .card__data{
-    animation: show-data 1s forwards;
-    opacity: 1;
-    transition: opacity .3s;
-}
-.card__article:hover{
-    animation: remove-overflow 2s forwards;
-}
-.card__article:not(:hover){
-    animation: show-overflow 2s forwards;
-}
-.card__article:not(:hover) .card__data{
-    animation: remove-data 2s forwards;
-}
+
+
 .content-6{
-    margin-top: 70px;
+    margin-top: 30px;
     margin-bottom: 70px;
   }
   /*form*/
@@ -195,7 +134,10 @@
     transform-origin: center;
     transition: transform 0.3s ease;
   }
-  
+  #img_about{
+    width: 600px;
+    height: 400px;
+  }
   /*form*/
   /*Footer*/
   .container-foot{
@@ -272,10 +214,6 @@
 
 /* for small devices*/
 @media screen and (max-width:348px){
-     #img_about{
-        width: 340px;
-        height: 200px;
-    }
     .admin > h3{
         font-size: 9px !important;
     }
@@ -311,39 +249,141 @@
     .container-three{
     margin-inline:1rem;
     }
-    .card__data{
-        width: 250px;
-        padding: 1rem;
+    
+    #img_about{
+        width: 340px;
+        height: 200px;
     }
 
 }
-/*For medium devices*/
-@media screen and (min-width:768px){
-    .card__container{
-        grid-template-columns:repeat(2,1fr);
-        column-gap:1.5rem
-    }
-}
-/*Andriod*/
-@media screen and (min-width: 420px){
+@media screen and (max-width: 425px){
     #img_col{
         padding-right: 0px;
         padding-left: 0px;
     }
+    #img_about{
+        width: 230px;
+        height: 200px;
+        margin: 10px;
+    }
+}
+/*For medium devices*/
+@media screen and (min-width:768px){
+    
 }
 /*For large devices*/
 @media screen and (min-width:1120px){
     .container-three{
         height: 100vh;
     }
-    .card__container{
-        grid-template-columns: repeat(3,1fr);
-    }
-    .card__img{
-        width: 348px;
-    }
-    .card__data{
-        width: 316px;
-        padding-inline: 2.5rem;
-    }
+    
 }
+
+.card-big-shadow {
+    max-width: 320px;
+    position: relative;
+}
+
+.coloured-cards .card-about {
+    margin-top: 10px;
+}
+
+.card-about[data-radius="none"] {
+    border-radius: 0px;
+}
+.card-about {
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+    background-color: #FFFFFF;
+    color: #252422;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-about .card-just-text .content {
+    padding: 20px 45px;
+    text-align: center;
+}
+.card-about .content {
+    padding: 20px 20px 10px 20px;
+}
+.card-about[data-color="blue"] .category {
+    color: #7a9e9f;
+}
+
+.card-about .category, .card .label {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.card-big-shadow:before {
+    background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: -12%;
+    content: "";
+    display: block;
+    left: -12%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+.card-about >h4, .h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.2em;
+    
+}
+.card-about >h6, .h6 {
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card-about .description {
+    font-size: 16px;
+    color: #66615b;
+}
+.content-card{
+    margin-top:10px;    
+}
+
+
+.card-about[data-color="blue"] {
+    background: #b8d8d8;
+}
+.card-about[data-color="blue"] .description {
+    color: #506568;
+}
+
+.card-about[data-color="green"] {
+    background: #d5e5a3;
+}
+.card-about[data-color="green"] .description {
+    color: #60773d;
+}
+.card-about[data-color="green"] .category {
+    color: #92ac56;
+}
+
+.card-about[data-color="yellow"] {
+    background: #ffe28c;
+}
+.card-about[data-color="yellow"] .description {
+    color: #b25825;
+}
+.card-about[data-color="yellow"] .category {
+    color: #d88715;
+}
+
+
+.card-about[data-color="orange"] {
+    background: #ff8f5e;
+}
+.card-about[data-color="orange"] .description {
+    color: #772510;
+}
+.card-about[data-color="orange"] .category {
+    color: #e95e37;
+} 
