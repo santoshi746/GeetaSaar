@@ -251,15 +251,6 @@
     .container-two img{
         width: 300px;
     }
-    .container-one-content{
-        top: 150px;
-        width: 200px;
-        height: 200px;
-        left: 30px;
-        overflow: hidden;
-        padding: 10px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    }
     .container-three{
     margin-inline:1rem;
     }
