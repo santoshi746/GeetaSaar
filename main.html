@@ -75,7 +75,8 @@
                     <a class="nav-link mx-lg-2 " href="#contact"><span class="word">C</span>ontact us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-lg-2 " data-bs-target="#testimonials" data-bs-toggle="modal" href="#"><span class="word">M</span>entor review</a>
+                    <a class="nav-link mx-lg-2 "  href="#"><span class="word">M</span>entor review</a>
+                    <!--To add model add data-bs-target="#testimonials" data-bs-toggle="modal"-->
                   </li>
                   <li class="nav-item">
                     <a class="nav-link mx-lg-2 " href="form.html"><span class="word">R</span>egister</a>
@@ -513,6 +514,25 @@
         </div>
       </div>
       <!--testimonials-->
+      <div class="modal_wrapper">
+        <div class="modal fade" id="Auto_modal">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <!-- <div class="modal-header">
+                <h3 class="display-6"></h3>
+              <button type="button" class="btn-close float-end" data-bs-dismiss="modal" ></button>
+              </div> -->
+              <div class="modal-body">
+               <div class="row">
+                <div class="col-12 form-one" >
+                 <img src="/assets/Welcome.png" alt="">
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
       </script>
@@ -540,6 +560,17 @@
                 mobileMsg.className = "mobile_val invalid"; // Red color
             }
         });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    var myModal = new bootstrap.Modal(document.getElementById("Auto_modal"));
+    myModal.show();
+
+    setTimeout(function () {
+        myModal.hide();
+    }, 7000); // Auto-hide after 3 seconds
+});
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
