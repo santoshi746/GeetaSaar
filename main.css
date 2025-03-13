@@ -292,6 +292,9 @@ H1,h2,h3,h4,h5,h6{
 
 /* for small devices*/
 @media screen and (max-width:348px){
+     .container-one{
+        background-size: cover;
+    }
     #Auto_modal img{
         width: 340px;
     }
@@ -360,6 +363,9 @@ H1,h2,h3,h4,h5,h6{
 
 }
 @media screen and (max-width: 430px){
+     .container-one{
+        background-size: cover;
+    }
     #Auto_modal img{
         width: 380px;
     }
