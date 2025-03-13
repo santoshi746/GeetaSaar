@@ -402,6 +402,7 @@
                     <input type="number" id="mobile" name="mobile" required>
                     <div class="underline"></div>
                     <label for="mobile">Mobile no</label>
+                    <div class="mobile_val"></div>
                  </div>
               </div>
               <div class="form-row">
@@ -523,7 +524,23 @@
       })();
 </script>
       <script src="main.js"></script>
-    
+    <script>
+      document.getElementById("mobile").addEventListener("input", function() {
+            let mobile = this.value;
+            let mobileMsg = document.querySelector(".mobile_val");
+
+            // Regular expression to check 10-digit number starting with 6,7,8,9
+            let mobilePattern = /^[6789]\d{9}$/;
+
+            if (mobilePattern.test(mobile)) {
+                mobileMsg.textContent = "Valid number";
+                mobileMsg.className = "mobile_val valid"; // Green color
+            } else {
+                mobileMsg.textContent = "Enter valid number";
+                mobileMsg.className = "mobile_val invalid"; // Red color
+            }
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
