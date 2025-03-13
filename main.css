@@ -304,6 +304,10 @@ H1,h2,h3,h4,h5,h6{
     .navbar{
         margin-top: 2rem !important;
     }
+    .break{
+        display: block;
+        margin: 30px;
+    }
     .admin > a{
         display: block;
     }
@@ -365,6 +369,10 @@ H1,h2,h3,h4,h5,h6{
 @media screen and (max-width: 430px){
      .container-one{
         background-size: cover;
+    }
+    .break{
+        display: block;
+        margin: 30px;
     }
     #Auto_modal img{
         width: 380px;
