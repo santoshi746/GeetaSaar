@@ -38,7 +38,9 @@ H1,h2,h3,h4,h5,h6{
     z-index: 1000;
     animation: pulse 1s cubic-bezier(0,0,0,0) 0.3s infinite;
 }
-
+#Auto_modal img{
+    width: 750px;
+}
 #call_menu a {
     text-decoration: none;
     color: white;
@@ -290,6 +292,9 @@ H1,h2,h3,h4,h5,h6{
 
 /* for small devices*/
 @media screen and (max-width:348px){
+    #Auto_modal img{
+        width: 340px;
+    }
     .admin > h3{
         font-size: 9px !important;
     }
@@ -355,6 +360,9 @@ H1,h2,h3,h4,h5,h6{
 
 }
 @media screen and (max-width: 430px){
+    #Auto_modal img{
+        width: 380px;
+    }
     .container-three{
         margin-inline:0.5rem;
         }
