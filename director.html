@@ -3,14 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Director</title>
+    <title>GeetaSaar</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon_img.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="director.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container pt-2 admin">
-      <h5 class="text-center">Admission no <i class="fa-solid fa-phone"></i> <a href="tel:+919307998813" class="text-decoration-none">+91 9307998813</a> Student helpline <i class="fa-solid fa-phone"></i> <a href="tel:+919307998813" class="text-decoration-none">+91 9307998813</a></h5>
+    <div id="call_menu">
+      <a href="tel:+919307998813"><i class="bi bi-telephone-outbound-fill"></i></a>
+    </div>
+    <div class="container my-3 pt-2 admin">
+      <h5 class="text-center">Admission no <span class="call"><i class="fa-solid fa-phone main_head_call"></i></span> <a href="tel:+919307998813" class="text-decoration-none">+91 9307998813</a> Student helpline <span class="call"><i class="fa-solid fa-phone main_head_call"></i></span> <a href="tel:+919307998813" class="text-decoration-none">+91 9307998813</a></h5>
     </div>
       <!--Navbar start-->
       <nav class="navbar navbar-expand-lg px-2 sticky-top">
@@ -24,16 +32,24 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2 " aria-current="page" href="#"><span class="word">H</span>ome</a>
+                  <a class="nav-link mx-lg-2" aria-current="page" href="main.html"><span class="word">H</span>ome</a>
                 </li>
                 <li class="nav-item dropdown" id="dropdown2">
-                  <a class="nav-link mx-lg-2 dropdown-toggle active" data-bs-target="#dropdown2" data-bs-toggle="dropdown" href="#about"><span class="word">A</span>bout</a>
+                  <a class="nav-link mx-lg-2 dropdown-toggle active" data-bs-target="#dropdown2" data-bs-toggle="dropdown" href="main.html"><span class="word">A</span>bout</a>
                   <ul class="dropdown-menu">
-                    <li class="dropdown-item"><a href="#about" class="btn">About</a></li>
+                    <li class="dropdown-item"><a href="main.html" class="btn">About</a></li>
                     <li class="dropdown-item"><a href="director.html" class="btn">Director desk</a></li>
+                    <li class="dropdown-item"><a href="education.html" class="btn">Education with us</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown" id="dropdown3">
+                  <a href="#" class="nav-link mx-lg-2 dropdown-toggle" data-bs-target="#dropdown3" data-bs-toggle="dropdown"><span class="word">C</span>ourses</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="courses.html" class="btn">commerce</a></li>
+                    <li class="dropdown-item"><a href="course.html" class="btn">Skill Academy</a></li>
+                  </ul>
+                </li>
+                <!-- <li class="nav-item dropdown" id="dropdown3">
                   <a href="#" class="nav-link mx-lg-2 dropdown-toggle" data-bs-target="#dropdown3" data-bs-toggle="dropdown"><span class="word">X</span>I, <span class="word">X</span>II Classes</a>
                   <ul class="dropdown-menu">
                     <li class="dropdown-item"><a href="" class="btn">Arts</a></li>
@@ -60,15 +76,25 @@
                         <a href="#" class="btn">CWA-Foundation</a>
                       </li>
                     </ul>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link mx-lg-2 " href="#contact"><span class="word">C</span>ontact us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-lg-2 " data-bs-target="#testimonials" data-bs-toggle="modal" href="#"><span class="word">M</span>entor review</a>
+                    <a class="nav-link mx-lg-2 "  href="#"><span class="word">M</span>entor review</a>
+                    <!--To add model add data-bs-target="#testimonials" data-bs-toggle="modal"-->
                   </li>
                   <li class="nav-item">
                     <a class="nav-link mx-lg-2 " href="form.html"><span class="word">R</span>egister</a>
+                  </li>
+                  <li class="nav-item">
+                    <div id="google_element" class="translate"></div>
+                    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate" type="text/javascript"></script>
+                    <script>
+                      function loadGoogleTranslate(){
+                        new google.translate.TranslateElement("google_element");
+                      }
+                    </script>
                   </li>
               </ul>
               
