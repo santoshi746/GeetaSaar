@@ -1,3 +1,33 @@
+H1,h2,h3,h4,h5,h6{
+  font-family: "Oswald", sans-serif;
+font-optical-sizing: auto;
+font-weight: 200;
+font-style: normal;
+}
+.translate {
+  display: flex;
+  align-items: center;
+  height: 30px; /* Adjust this value to match the navbar height */
+}
+
+#google_element {
+  transform: scale(0.9); /* Adjust the size of the dropdown */
+  transform-origin: left center;
+}
+
+.goog-te-gadget {
+  font-size: 14px !important; /* Adjust font size */
+  height: 30px !important; /* Match navbar height */
+  display: flex;
+  align-items: center;
+}
+
+.goog-te-combo {
+  height: 30px !important; /* Adjust dropdown height */
+  padding: 5px;
+  font-size: 14px;
+}
+
 .admin>h5>a{
   color: orange;
 }
@@ -5,24 +35,76 @@
   color: orange;
   font-weight: bold;
 }
-.navbar-brand>img{
-  height: 50px;
-
-}
 .navbar-toggler{
   border: none !important;
   font-size: 1.25em;
 }
 .nav-item > .active{
-  border-bottom: 3px solid rgb(0, 229, 255);
+  border-bottom: 3px solid orange;
 }
 .nav-item :hover{
-  border-bottom: 3px solid rgb(0, 229, 255);
+  border-bottom: 3px solid orange;
+}
+.navbar-brand>img{
+  height: 50px;
+
 }
 .navbar{
   background-color: white;
   border-radius: 30px ;
 }
+#call_menu {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  background-color: orange; /* Change color if needed */
+  color: white;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 34px;
+  z-index: 1000;
+  animation: pulse 1s cubic-bezier(0,0,0,0) 0.3s infinite;
+}
+#call_menu a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: changeSize 1s cubic-bezier(0,0,0,0) 0s infinite;
+}
+.call{
+  background-color: orange;
+  margin: 20px 20px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  animation: pulse 1s cubic-bezier(0,0,0,0) 0.3s infinite;
+}
+.call .main_head_call{
+  text-shadow: 0 2px 10px black;
+  animation: changeSize 1s cubic-bezier(0,0,0,0) 0s infinite;
+}
+@keyframes pulse{
+  0%{ box-shadow: 0 0 0 0 #fdf5da;}
+  25%{ box-shadow: 0 0 0 10px #fdf5da;}
+  50%{ box-shadow: 0 0 0 20px #fcf2f2;}
+  1000%{ box-shadow: 0 0 0 30px #fff;}
+}
+@keyframes changeSize {
+0%{transform: scale(1);}
+25%{transform: scale(1.2);}
+50%{transform: scale(0.8);}
+75%{transform: scale(1.1);}
+100%{transform: scale(1);}  
+}
+
+.word{
+  color: orange;
+  font-weight: bold;
+}
+
 
 .login {
     min-height: 100vh;
@@ -62,7 +144,7 @@
     list-style: none;
   }
   .footer{
-    background-color: rgba(197, 159, 89, 0.855);
+    background-color: black;
     padding: 70px 0;
   }
   .footer-col{
@@ -70,12 +152,13 @@
     padding: 0 15px;
   }
   .footer-col h4{
+    color: orange;
     font-size: 18px;
     text-transform: capitalize;
     margin-bottom: 30px;
   }
  .footer a{
-    color: black;
+    color: orange;
     text-decoration: none;
     margin: 5px;
  }
@@ -87,3 +170,79 @@
     height: 25px;
  }
   /*Footer*/
+  @media screen and (max-width:348px) {
+    .admin > h3{
+      font-size: 9px !important;
+  }
+  .navbar{
+      margin-top: 2rem !important;
+  }
+  .admin > a{
+      display: block;
+  }
+  .container-one{
+      width: 100%;
+  }
+  .call{
+    background-color: orange;
+    margin: 20px 20px;
+    padding: 10px;
+    border-radius: 50%;
+    position: relative;
+    animation: pulse 1s cubic-bezier(0,0,0,0) 0.3s infinite;
+}
+
+.call .main_head_call{
+    text-shadow: 0 2px 10px black;
+    animation: changeSize 1s cubic-bezier(0,0,0,0) 0s infinite;
+}
+@keyframes pulse{
+    0%{ box-shadow: 0 0 0 0 #fdf5da;}
+    25%{ box-shadow: 0 0 0 10px #fdf5da;}
+    50%{ box-shadow: 0 0 0 20px #fcf2f2;}
+    1000%{ box-shadow: 0 0 0 30px #fff;}
+}
+  }
+  @media screen and (max-width:430px) {
+    #call_menu {
+      position: fixed;
+      bottom: 20px; /* Adjust as needed */
+      right: 20px; /* Adjust as needed */
+      background-color: orange; /* Change color if needed */
+      color: white;
+      padding: 20px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      font-size: 24px;
+      z-index: 1000;
+      animation: pulse 1s cubic-bezier(0,0,0,0) 0.3s infinite;
+  }
+  
+  #call_menu a {
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: changeSize 1s cubic-bezier(0,0,0,0) 0s infinite;
+  }
+  
+  .call{
+      background-color: transparent;
+      margin: 10px 10px;
+      padding: 5px;
+      border-radius: 50%;
+      position: relative;
+      animation: pulse 1s cubic-bezier(0,0,0,0) 0.3s infinite;
+  }
+  .call .main_head_call{
+      text-shadow: 0 2px 5px black;
+      animation: changeSize 1s cubic-bezier(0,0,0,0) 0s infinite;
+  }
+  @keyframes pulse{
+      0%{ box-shadow: 0 0 0 0 #fdf5da;}
+      25%{ box-shadow: 0 0 0 2px #fdf5da;}
+      50%{ box-shadow: 0 0 0 5px #fcf2f2;}
+      1000%{ box-shadow: 0 0 0 7px #fff;}
+  }
+  }
