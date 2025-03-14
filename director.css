@@ -1,9 +1,27 @@
 /*Navbar*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 H1,h2,h3,h4,h5,h6{
-  font-family: "Oswald", sans-serif;
-font-optical-sizing: auto;
-font-weight: 200;
-font-style: normal;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.dropdown-item>a:hover{
+    border: none;
+}
+.dropdown-item > a{
+    color: black;
+    text-decoration: none;
+}
+.dropdown-item,a:active{
+    background-color: white !important;
+}
+.admin{
+    display: block;
+    text-align: right;
+}
+.admin>small>a{
+    color: black;
 }
 #call_menu {
   position: fixed;
@@ -50,9 +68,6 @@ font-style: normal;
 50%{transform: scale(0.8);}
 75%{transform: scale(1.1);}
 100%{transform: scale(1);}  
-}
-.admin>h5>a{
-  color: black;
 }
 .word{
   color: orange;
@@ -120,10 +135,6 @@ ul{
 }
  /*Footer*/
  @media screen and (max-width:348px) {
-   .break{
-        display: block;
-        margin: 30px;
-    }
   .call{
     background-color: orange;
     margin: 20px 20px;
@@ -145,10 +156,6 @@ ul{
 }
  }
  @media screen and (max-width:430px){
-   .break{
-        display: block;
-        margin: 30px;
-    }
   .row{
     display: flex;
     flex-direction: column;
