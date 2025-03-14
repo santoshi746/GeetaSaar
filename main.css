@@ -7,9 +7,16 @@ H1,h2,h3,h4,h5,h6{
 .admin>h5>a{
     color: black;
 }
+.join_us .card{
+border-left: 3px solid black;
+border-right: 3px solid orange;
+}
 .word{
     color: orange;
     font-weight: bold;
+}
+.container-one-content small{
+    text-align: justify;
 }
 .navbar-toggler{
     border: none !important;
@@ -292,9 +299,6 @@ H1,h2,h3,h4,h5,h6{
 
 /* for small devices*/
 @media screen and (max-width:348px){
-     .container-one{
-        background-size: cover;
-    }
     #Auto_modal img{
         width: 340px;
     }
@@ -303,10 +307,6 @@ H1,h2,h3,h4,h5,h6{
     }
     .navbar{
         margin-top: 2rem !important;
-    }
-    .break{
-        display: block;
-        margin: 30px;
     }
     .admin > a{
         display: block;
@@ -367,13 +367,6 @@ H1,h2,h3,h4,h5,h6{
 
 }
 @media screen and (max-width: 430px){
-     .container-one{
-        background-size: cover;
-    }
-    .break{
-        display: block;
-        margin: 30px;
-    }
     #Auto_modal img{
         width: 380px;
     }
@@ -438,6 +431,13 @@ H1,h2,h3,h4,h5,h6{
     }
     .container-one-content{
         display: none !important;    
+    }
+    .break{
+        display: block;
+        margin: 30px;
+    }
+    .container-one{
+        background-size: cover;
     }
 }
 /*For medium devices*/
