@@ -1,488 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeetaSaar</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon_img.png">
-    <link rel="stylesheet" href="main.css">
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <div id="call_menu">
-      <a href="tel:+919307998813"><i class="bi bi-telephone-outbound-fill"></i></a>
-    </div>
-    <div class="container admin">
-      <small>Admission no <a href="tel:+919307998813" class="text-decoration-none"> <span class="call"><i class="fa-solid fa-phone main_head_call"></i></span> +91 9307998813</a><br><br>
-    Student helpline  <a href="tel:+919307998813" class="text-decoration-none"><span class="call"><i class="fa-solid fa-phone main_head_call"></i></span>+91 9307998813</a></small>
-    </div>
-    <!--Navbar start-->
-    <nav class="navbar navbar-expand-lg px-2 sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand me-auto" href="main.html"><img src="./assets/Logo.png" alt=""></a>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/Logo.png" height="40px" alt=""></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2 active" aria-current="page" href="#"><span class="word">H</span>ome</a>
-                </li>
-                <li class="nav-item dropdown" id="dropdown2">
-                  <a class="nav-link mx-lg-2 dropdown-toggle" data-bs-target="#dropdown2" data-bs-toggle="dropdown" href="#about"><span class="word">A</span>bout</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item"><a href="#about" >About</a></li>
-                    <li class="dropdown-item"><a href="director.html" >Founder's desk</a></li>
-                    <li class="dropdown-item"><a href="education.html" >Education with us</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown" id="dropdown3">
-                  <a href="#" class="nav-link mx-lg-2 dropdown-toggle" data-bs-target="#dropdown3" data-bs-toggle="dropdown"><span class="word">C</span>ourses</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item"><a href="commerce.html" >GS Commerce Classes</a></li>
-                    <li class="dropdown-item"><a href="skill_academy.html" >GS Skill Academy</a></li>
-                  </ul>
-                </li>
-                <!-- <li class="nav-item dropdown" id="dropdown3">
-                  <a href="#" class="nav-link mx-lg-2 dropdown-toggle" data-bs-target="#dropdown3" data-bs-toggle="dropdown"><span class="word">X</span>I, <span class="word">X</span>II Classes</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item"><a href="" class="btn">Arts</a></li>
-                    <li class="dropdown-item"><a href="" class="btn">Commerce</a></li>
-                  </ul>
-                </li>-->
-                <!-- <li class="nav-item dropdown" id="dropdown4">
-                  <a href="" class="nav-link mx-lg-2 dropdown-toggle" data-bs-target="#dropdown4" data-bs-toggle="dropdown"><span class="word">U</span>nder graduate</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item"><a href="" class="btn">BBA</a></li>
-                    <li class="dropdown-item"><a href="" class="btn">BA</a></li>
-                    <li class="dropdown-item"><a href="" class="btn">B. Com</a></li>
-                  </ul>
-                </li> -->
-                <!--<li class="nav-item dropdown" id="dropdown1">
-                  <a class="nav-link mx-lg-2 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#dropdown1" href="#"><span class="word">C</span>A, <span class="word">C</span>S, <span class="word">C</span>WA</a>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown-item">
-                        <a href="#" class="btn">CA-Foundation</a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="#" class="btn">CS-Foundation</a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="#" class="btn">CWA-Foundation</a>
-                      </li>
-                    </ul>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link mx-lg-2 " href="#contact"><span class="word">C</span>ontact <span class="word">U</span>s</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2 "  href="main.html"><span class="word">M</span>entor <span class="word">R</span>eview</a>
-                    <!--To add model add data-bs-target="#testimonials" data-bs-toggle="modal"-->
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2 " href="form.html"><span class="word">R</span>egister</a>
-                  </li>
-                  <li class="nav-item">
-                    <div id="google_element" class="translate"></div>
-                    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate" type="text/javascript"></script>
-                    <script>
-                      function loadGoogleTranslate() {
-                        new google.translate.TranslateElement(
-                          {
-                            pageLanguage: 'en', // Default language
-                            includedLanguages: 'en,hi', // Only English and Hindi
-                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-                          }, 
-                        'google_element'
-                      );
-                    }
-                    </script>
-                  </li>
-              </ul>
-              
-            </div>
+  
+</head>
+<body>
+  
+  <div id="call_menu">
+    <a href="tel:+919307998813"><i class="bi bi-telephone-outbound-fill"></i></a>
+  </div>
+  <div class="container admin">
+    <small>Admission no <a href="tel:+919307998813" class="text-decoration-none"> <span class="call"><i class="fa-solid fa-phone main_head_call"></i></span> +91 9307998813</a><br><br>
+  Student helpline  <a href="tel:+919307998813" class="text-decoration-none"><span class="call"><i class="fa-solid fa-phone main_head_call"></i></span>+91 9307998813</a></small>
+  </div>
+  
+  <!--Navbar start-->
+  <nav class="navbar navbar-expand-lg px-2 sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="main.html"><img src="./assets/Logo.png" alt=""></a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/Logo.png" height="40px" alt=""></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 " aria-current="page" href="main.html"><span class="word">H</span>ome</a>
+              </li>
+              <li class="nav-item dropdown" id="dropdown2">
+                <a class="nav-link mx-lg-2 dropdown-toggle" data-bs-target="#dropdown2" data-bs-toggle="dropdown" href=""><span class="word">A</span>bout</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="main.html" class="btn">About</a></li>
+                  <li class="dropdown-item"><a href="director.html" class="btn">Founder's desk</a></li>
+                  <li class="dropdown-item"><a href="education.html" class="btn">Education with us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" id="dropdown3">
+                <a href="#" class="nav-link mx-lg-2 dropdown-toggle" data-bs-target="#dropdown3" data-bs-toggle="dropdown"><span class="word">C</span>ourses</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="commerce.html" class="btn">GS Commerce Classes</a></li>
+                  <li class="dropdown-item"><a href="skill_academy.html" class="btn">GS Skill Academy</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item dropdown" id="dropdown3">
+                <a href="#" class="nav-link mx-lg-2 dropdown-toggle" data-bs-target="#dropdown3" data-bs-toggle="dropdown"><span class="word">X</span>I, <span class="word">X</span>II Classes</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="" class="btn">Arts</a></li>
+                  <li class="dropdown-item"><a href="" class="btn">Commerce</a></li>
+                </ul>
+              </li>-->
+              <!-- <li class="nav-item dropdown" id="dropdown4">
+                <a href="" class="nav-link mx-lg-2 dropdown-toggle" data-bs-target="#dropdown4" data-bs-toggle="dropdown"><span class="word">U</span>nder graduate</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="" class="btn">BBA</a></li>
+                  <li class="dropdown-item"><a href="" class="btn">BA</a></li>
+                  <li class="dropdown-item"><a href="" class="btn">B. Com</a></li>
+                </ul>
+              </li> -->
+              <!--<li class="nav-item dropdown" id="dropdown1">
+                <a class="nav-link mx-lg-2 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#dropdown1" href="#"><span class="word">C</span>A, <span class="word">C</span>S, <span class="word">C</span>WA</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                      <a href="#" class="btn">CA-Foundation</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a href="#" class="btn">CS-Foundation</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a href="#" class="btn">CWA-Foundation</a>
+                    </li>
+                  </ul>
+              </li> -->
+              <li class="nav-item">
+                  <a class="nav-link mx-lg-2 " href="main.html"><span class="word">C</span>ontact <span class="word">U</span>s</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2 "  href="main.html"><span class="word">M</span>entor <span class="word">R</span>eview</a>
+                  <!--To add model add data-bs-target="#testimonials" data-bs-toggle="modal"-->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2 active" href="form.html"><span class="word">R</span>egister</a>
+                </li>
+                <li class="nav-item">
+                  <div id="google_element" class="translate"></div>
+                  <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate" type="text/javascript"></script>
+                  <script>
+                    function loadGoogleTranslate() {
+                      new google.translate.TranslateElement(
+                        {
+                          pageLanguage: 'en', // Default language
+                          includedLanguages: 'en,hi', // Only English and Hindi
+                          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                        }, 
+                      'google_element'
+                    );
+                  }
+                  </script>
+                </li>
+            </ul>
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-        </div>
-      </nav>
-    <!--Navbar end-->
-    <!--container one-->
-    <div class="container-one">
-      <div class="container-one-content">
-        <h5>Join us Today..!</h5>
-        <small>Welcome to GeetaSaar Foundation, where we don’t just talk about change; we make it happen! Our mission is to empower
-           the incredible individuals and provide right path through education and learning. We together shall strive hard to live and 
-           achieve that, every girl shine, and we are here to make that happen!</small>
-          <a href="form.html" class="btn btn-warning mx-auto d-block mt-5">Join us</a>
-        </div>
-    </div>
-    <!--container one-->
-    <!--Heading -->
-    <marquee behavior="" direction="" class="my-5 drag-hover"><img src="./assets/Logo.png" height="100px" alt=""></marquee>
-    <!--Heading-->
-    <!--Container two-->
-   <div id="about" class="drag-hover">
-      <div class="container-two row ">
-        <div class="col-xs col-sm col-lg col-xl col-xxl text-center">
-          <h3 class="container my-2 about">
-            About us
-          </h3>
-          <ul id="about-para">
-            <li class="my-2"><i class="bi bi-x-diamond-fill"></i>  <b>GeetaSaar</b> is a not-for-profit organization, formed with a sole intention to make education accessible to every individual, and reach every corner including villages. </li>
-            <li class="my-2"><i class="bi bi-x-diamond-fill"></i>  <b>GeetaSaar</b> is not just as a place of education for today, but is an <b>Eternal Pillar</b> dedicated to provide accessible education to generations and generations. 
-              We believe that every soul has some inherent and valuable potentiality. </li>
-            <li class="my-2"><i class="bi bi-x-diamond-fill"></i>  <b>GeetaSaar</b> is aimed to identify that potentiality, unlock the same and make lives meaningful. </li>
-            <li class="my-2"><i class="bi bi-x-diamond-fill"></i>  This foundation is named as <b>GeetaSaar</b>, which name has been inspired by the book <b>“Bhagvad Geeta”</b>, the most scared scriptures of Hinduism, which teaches the way to lead one’s own life with clarity, peace and achieve the self-mastery.</li>
-            <li class="my-2"><i class="bi bi-x-diamond-fill"></i>  The book <b>Bhagavad Geeta</b> addresses the human condition, exploring the meaning of life, duty (Dharma), the nature of the self, and the path to liberation.</li>
-          </ul>
-          <a href="director.html" class="btn btn-warning float-left">Director desk</a>
-          <!-- <p >
-            </p>    
-              -->
-        </div>
-        <div class="col-xs col-sm col-lg col-xl col-xxl" id="img_col">
-          <img src="./img/class.png" alt=""  id="img_about">
-        </div>
-      </div>
-   </div>
-    <!--container two-->
-    <!--container-three-->
-      <div class="container-three  drag-hover">
-        <h3 class="container my-5 text-warning" >What are we...</h3>
-        <b class="ms-5">Because we’re not just academics! </b>
-        <p class="ms-5">We’re a powerhouse of positivity, a hub of hope, and a launchpad for dreams. We bridge academic gaps like a pro, unlocking potentialities that will make you say, <b><br> 'Wow, I can do that!'</b></p><br><br>
-      <div class="container bootstrap snippets bootdeys">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 content-card">
-            <div class="card-big-shadow">
-              <div class="card card-about card-just-text" data-background="color" data-color="blue" data-radius="none">
-                <div class="content">
-                  
-                  <h4 class="title"><a href="#" class="text-dark text-decoration-none">VISION</a></h4>
-                  <p class="description">"To empower individuals across Rajasthan by providing Accessible Education, Skill Development, fostering self-reliance wit the aim of ensuring economic independence, with special focus to empower every woman and girl."</p>
-                </div>
-              </div> <!-- end card -->
-            </div>
-          </div>
-  
-          <div class="col-md-3 col-sm-6 content-card">
-            <div class="card-big-shadow">
-              <div class="card card-about card-just-text" data-background="color" data-color="green" data-radius="none">
-                <div class="content">
-                  
-                  <h4 class="title"><a href="#" class="text-dark text-decoration-none">Mission</a></h4>
-                  <p class="description">"To bridge the vast gap in education system, empower dreams, transform lives and create a brighter future for youth, particularly girls, women, rural communities and establisj a self-reliance model."</p>
-                </div>
-              </div> <!-- end card -->
-            </div>
-          </div>
-  
-          <div class="col-md-3 col-sm-6 content-card">
-            <div class="card-big-shadow">
-              <div class="card card-about card-just-text" data-background="color" data-color="yellow" data-radius="none">
-                <div class="content">
-                  
-                  <h4 class="title"><a href="#" class="text-dark text-decoration-none">GOAL</a></h4>
-                  <p class="description">"To reach every village in Rajasthan and ensure that every individual has the opportunity to learn, grow, and succeed"</p>
-                </div>
-              </div> <!-- end card -->
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 content-card">
-            <div class="card-big-shadow">
-              <div class="card card-about card-just-text" data-background="color" data-color="orange" data-radius="none">
-                <div class="content">
-                  
-                  <h4 class="title"><a href="#" class="text-dark text-decoration-none">OBJECTIVE</a></h4>
-                  <p class="description">"To enhance literacy rates in Rajasthan's villages by 25% within five years."</p>
-                </div>
-              </div> <!-- end card -->
-            </div>
           </div>
         </div>
-        
-      </div>
-      
-      </div>
-    <a href="tel:+919307998813" class="btn btn-warning mx-auto d-block w-25 my-3 call "><i class="fa-solid fa-phone main_head_call">  Call now</i></a>
-    <div class=" container-two drag-hover why_join_us">
-      <h3 class="container my-5 text-warning">Why join us...</h3>
-      <h4>Your Ultimate Launchpad to Academic and Professional Success</h4>
-      <p id="join_us_para">In today’s fast-paced world, choosing the right educational and professional path is key to unlocking a world of opportunities. 
-        Whether you are a student at the brink of higher education or a professional aiming to scale new heights, our platform is designed
-         to provide you with a seamless, all-in-one learning experience. Read on to discover how we can be the catalyst for your success!</p>
-         <div class="row my-2">
-          <div class=" mx-1 my-1 col-xs col-md-lg col-md-sm col-md-xl col-xl col-lg col-md col-lg col-xxl join_us">
-            <div class="card">
-              <div class="card-body">
-                <h5>Empowering High School Students: XI and XII for Arts and Commerce</h5>
-            <p>The foundation of a successful career begins in high school. Our dedicated programs for XI and XII students, specifically tailored for Arts and Commerce streams, focus on:</p>
-            <dl>
-              <dt>In-depth Subject Knowledge:</dt>
-              <dd>We ensure that students grasp the fundamentals as well as advanced concepts, preparing them for competitive entrance exams and future academic challenges.</dd>
-              <dt>Skill Development:</dt>
-              <dd>Beyond textbooks, our curriculum emphasizes critical thinking, effective communication, and problem-solving skills.</dd>
-              <dt>Personalized Guidance:</dt>
-              <dd> Expert mentors provide one-on-one counseling to help students choose the best paths for their higher education and career aspirations.</dd>
-            </dl>
-            <p>By providing a structured yet dynamic learning environment, we aim to empower young 
-            minds to confidently transition from school to higher education.</p>
-          </div>
-              </div>
-            </div>
-          <div class=" mx-1 my-1 col-xs col-md-lg col-md-sm col-md-xl col-xl col-lg col-md col-lg col-xxl join_us">
-            <div class="card">
-              <div class="card-body">
-                <h5>Advancing University Studies: All Semesters for B.A. and B. Com</h5>
-          <p>For undergraduate students pursuing Bachelor of Arts and Bachelor of Commerce degrees, our services offer a comprehensive academic support system:</p>
-      <dl>
-        <dt>Semester-Wise Guidance:</dt>
-        <dd>Whether you are starting your first semester or wrapping up your final year, our structured programs cover every stage of your academic journey.</dd>
-        <dt>Interactive Learning:</dt>
-        <dd>With access to expert tutorials, interactive sessions, and group discussions, students can reinforce their understanding of complex subjects.</dd>
-        <dt>Career-Centric Approach:</dt>
-        <dd>We help bridge the gap between academic theories and real-world applications, preparing students for the evolving demands of the job market.</dd>
-      </dl>
-      <p>Our commitment is to not only support your academic growth but also to prepare you for a thriving career post-graduation.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row my-2">
-          <div class=" mx-1 my-1 col-xs col-md-lg col-md-sm col-md-xl col-xl col-lg col-md col-lg col-xxl join_us">
-            <div class="card">
-              <div class="card-body">
-                <h5> Diving into Professional Courses: CA, CS, and CWA</h5>
-      <p>Professional courses like Chartered Accountancy (CA), Company Secretary (CS), and Cost and Work Accountancy (CWA) are gateways to some of the most respected careers in the business world. Our specialized training programs offer:</p>
-      <dl>
-        <dt>Expert-Led Instruction:</dt>
-        <dd>Learn from industry experts who bring practical insights and years of experience to the classroom.</dd>
-        <dt>Rigorous Exam Preparation:</dt>
-        <dd>Our intensive coaching and tailored study materials are designed to help you clear even the toughest examinations with confidence.</dd>
-        <dt>Real-World Exposure:</dt>
-        <dd>With case studies, internships, and live project sessions, we ensure that you gain not only theoretical knowledge but also practical skills essential for professional success.</dd>
-      </dl>
-      <p>These courses are meticulously structured to guide you through every challenge, ensuring that you emerge as 
-        a competent and confident professional ready to tackle the corporate world.</p>
           
-              </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      </div>
+    </nav>
+  <!--Navbar end-->    <div class="container-fluid ps-md-0">
+        <div class="row g-0">
+          <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+          </div>
+          <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+                  <div class="col-md-9 col-lg-8 mx-auto">
+                    <div class="container" id="ff-compose"></div>
+                    <script async defer src="https://formfacade.com/include/108782132951778348407/form/1FAIpQLSfz-xgd1L83WtaCLgRaNk0imALJcgmn_hsCnHVeaPiDphlDFw/bootstrap.js?div=ff-compose"></script>
+                  </div>
             </div>
           </div>
-          <div class=" mx-1 my-1 col-xs col-md-lg col-md-sm col-md-xl col-xl col-lg col-md col-lg col-xxl join_us">
-            <div class="card">
-              <div class="card-body">
-                <h5>Enhancing Communication: Spoken English and Personality Development</h5>
-                <p>In today’s globalized environment, effective communication and a strong personality are as important as academic credentials. Our Spoken English and Personality Development programs are designed for students and professionals across all streams:</p>
-                <dl>
-                  <dt>Fluency and Confidence:</dt>
-                  <dd>Improve your spoken English through interactive sessions, real-life conversations, and engaging practice sessions.</dd>
-                  <dt>Holistic Development:</dt>
-                  <dd>Our programs focus on grooming your personality, enhancing your body language, and developing a confident demeanor that leaves a lasting impression.</dd>
-                  <dt>Versatile Curriculum:</dt>
-                  <dd> Whether you’re preparing for interviews, presentations, or simply aiming to improve daily communication, our courses are tailored to meet diverse needs.</dd>
-                </dl>
-                <p>By refining your communication skills and boosting your confidence, we prepare you to excel in any professional setting and to express yourself with clarity and impact.</p>
-                
-              </div>
-            </div>
-          </div>
-         </div>
-      
-      <a href="tel:+919307998813" class="btn btn-warning call w-25 mx-auto my-4 d-block"><i class="fa-solid fa-phone main_head_call">  Call now</i></a>
-    </div>
-    <div class="container-two container-our">
-      <h3 class="container text-warning">Our Offerings</h3>
-      <section class="design-section drag-timeline">
-        <h3 class="text-warning text-center">GS COMMERCE CLASSES</h3>
-        <div class="timeline">
-          <div class="timeline-empty"></div>
-          <div class="timeline-middle">
-          <div class="timeline-circle"></div>
-          </div>
-          <div class="timeline-component timeline-content">
-            <h2>11th and 12th Commerce Classes</h2>
-          </div>
-          <div class="timeline-component timeline-content">
-            <h2>11th and 12th Arts Classes</h2>
-          </div>
-          <div class="timeline-middle">
-          <div class="timeline-circle"></div>
-          </div>
-          <div class="timeline-empty"></div>
-          <div class="timeline-empty"></div>
-          <div class="timeline-middle">
-          <div class="timeline-circle"></div>
-          </div>
-          <div class=" timeline-component timeline-content">
-            <h2>All Semesters of B. Com, B.B.A. and B.A. </h2>
-          </div>
-          <div class=" timeline-component timeline-content">
-            <h2>Chartered Accountant (CA)</h2>
-          </div>
-          <div class="timeline-middle">
-            <div class="timeline-circle"></div>
-            </div>
-            <div class="timeline-empty"></div>
-          <div class="timeline-empty"></div>
-          <div class="timeline-middle">
-          <div class="timeline-circle"></div>
-          </div>
-          <div class=" timeline-component timeline-content">
-            <h2>Company Secretary (CS)</h2>
-          </div>
-          <div class=" timeline-component timeline-content">
-            <h2>Cost Accountant (CMA)</h2>
-          </div>
-          <div class="timeline-middle">
-            <div class="timeline-circle"></div>
-            </div>
-        </div> 
-      </section>
-      <section class="timeline-section">
-        <h3 class="text-warning text-center mb-5">GS SKILL ACADEMY</h3>
-        <div class="horizontal-timeline ">
-            <div class="timeline-box timeline-box-one">
-                <h2>Spoken English and Personality Development Classes</h2>
-            </div>
-            <div class="timeline-node">
-                <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-box timeline-box-two">
-                <h2>Practical Accounting & Taxation Training Courses</h2>
-            </div>
-            <div class="timeline-node">
-                <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-box timeline-box-one">
-                <h2>Basic and Advance Computer literacy Courses</h2>
-            </div>
-            <div class="timeline-node">
-                <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-box timeline-box-two">
-                <h2>Career Counselling for all streams</h2>
-            </div>
-            <div class="timeline-node">
-                <div class="timeline-dot"></div>
-            </div>
         </div>
-    </section>    
-    </div>
-    <a href="tel:+919307998813" class="btn btn-warning call w-25 my-5 mx-auto d-block"><i class="fa-solid fa-phone main_head_call">  Call now</i></a>
-    <!--container three-->
-      <!--common Query-->
-      <!-- <div class="container content-6 block drag-hover">
-        <h1 class="text-warning py-5">Most frequently asked questions...</h1>
-        <div class="accordion" id="accordion-1">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" >What is GS commerce?</button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-1">
-              <div class="accordion-body">
-                GeetaSaar is a not-for-profit organization, formed with a sole intention to make education accessible to every individual, and reach every corner including villages. 
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" >How to register</button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-1">
-              <div class="accordion-body">
-                <ol>
-                  <li>Click on register</li>
-                  <li>Fill all the neccesary details</li>
-                  <li>Our team will contact you soon</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" >What is the eligiblity criteria </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-1">
-              <div class="accordion-body">
-                The eligibility criteria for the Commerce class include students who have completed or are pursuing 11th, 12th, or a degree program.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingfour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" >What is professional CA, CWs?</button>
-            </h2>
-            <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordion-1">
-              <div class="accordion-body">
-                CA (Chartered Accountant) is a professional qualification in accounting, taxation, and auditing, conducted by ICAI in three stages: Foundation, Intermediate, and Final. CWS (Cost and Works Accountant), now called CMA (Cost and Management Accountant), is conducted by ICAI-CMA and focuses on cost management, financial planning, and business strategy. Both courses offer excellent career opportunities in finance, taxation, and corporate governance.
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div> -->
-      <!--common Query-->
-      <!--Contact us-->
-      <div class="container contact drag-hover" id="contact">
-            <div class="text">
-              Contact Us:
-            </div>
-           <form action="#" class="form-query" >
-              <div class="form-row">
-                 <div class="input-data">
-                    <input type="text" id="fname" name="fname"required>
-                    <div class="underline"></div>
-                    <label for="fname">First Name</label>
-                 </div>
-                 <div class="input-data">
-                    <input type="text" id="lname" name="lname" required>
-                    <div class="underline"></div>
-                    <label for="lname">Last Name</label>
-                 </div>
-              </div>
-              <div class="form-row">
-                 <div class="input-data">
-                    <input type="text" id="email" name="email" required>
-                    <div class="underline"></div>
-                    <label for="email">Email Address</label>
-                 </div>
-                 <div class="input-data">
-                    <input type="number" id="mobile" name="mobile" required>
-                    <div class="underline"></div>
-                    <label for="mobile">Mobile No</label>
-                    <div class="mobile_val"></div>
-                 </div>
-              </div>
-              <div class="form-row">
-                <div class="input-data textarea">
-                 <textarea rows="8" cols="80" id="comment" name="comment" required></textarea>
-                 <br />
-                 <div class="underline"></div>
-                 <label for="comment">Write your message</label>
-                 <br />
-                </div>
-              </div>
-              <div class="form-row submit-btn">
-                <div class="input-data">
-                   <div class="inner"></div>
-                   <input type="submit" class="btn btn-warning w-50 d-block mx-auto" id="submit" onclick="sendMail()" value="submit">
-                </div>
-             </div>
-           </form>
       </div>
       <!--Contact us-->
-      <footer class="footer my-4 drag-hover">
+      <footer class="footer my-4">
         <div class="container container-foot">
           <div class="row">
             <!--one-->
@@ -490,8 +140,8 @@
               <h4>Company</h4>
               <ul>
                 <li><a href="main.html">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="main.html">About Us</a></li>
+                <li><a href="main.html">Contact Us</a></li>
                 <li><a href="form.html">Register</a></li>
                 
               </ul>
@@ -511,7 +161,9 @@
             <div class="col-sm col-xs col-md col-lg col-xl col-xxl footer-col">
               <h4>get help</h4>
               <ul>
-                <li><a href="#call_menu">Course</a></li>
+                <!-- <li><a href="">FAQ</a></li> -->
+                <li><a href="">Course</a></li>
+                <!-- <li><a href="">Eligibility</a></li> -->
               </ul>
             </div>
             <!--four-->
@@ -570,64 +222,11 @@
         </div>
       </div>
       <!--testimonials-->
-      <div class="modal_wrapper">
-        <div class="modal fade" id="Auto_modal">
-          <div class="modal-dialog modal-dialog-centered modal-md">
-            <div class="modal-content">
-              <!-- <div class="modal-header">
-                <h3 class="display-6"></h3>
-              <button type="button" class="btn-close float-end" data-bs-dismiss="modal" ></button>
-              </div> -->
-              <div class="modal-body">
-               <div class="row">
-                <div class="col-12 form-one" >
-                 <img src="./img/Welcome.jpg" alt="">
-                </div>
-               </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      
+<script async defer src="https://formfacade.com/include/108782132951778348407/form/1FAIpQLSfz-xgd1L83WtaCLgRaNk0imALJcgmn_hsCnHVeaPiDphlDFw/bootstrap.js?div=ff-compose"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+        
       </script>
-      <script type="text/javascript">
-      (function(){
-        emailjs.init({
-          publicKey: "90IJSwSLEpr1_BL4C",
-        });
-      })();
-</script>
-      <script src="main.js"></script>
-    <script>
-      document.getElementById("mobile").addEventListener("input", function() {
-            let mobile = this.value;
-            let mobileMsg = document.querySelector(".mobile_val");
-
-            // Regular expression to check 10-digit number starting with 6,7,8,9
-            let mobilePattern = /^[6789]\d{9}$/;
-
-            if (mobilePattern.test(mobile)) {
-                mobileMsg.textContent = "Valid number";
-                mobileMsg.className = "mobile_val valid"; // Green color
-            } else {
-                mobileMsg.textContent = "Enter valid number";
-                mobileMsg.className = "mobile_val invalid"; // Red color
-            }
-        });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-    var myModal = new bootstrap.Modal(document.getElementById("Auto_modal"));
-    myModal.show();
-
-    setTimeout(function () {
-        myModal.hide();
-    }, 7000); // Auto-hide after 3 seconds
-});
-
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
