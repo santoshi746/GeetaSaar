@@ -1,8 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 H1,h2,h3,h4,h5,h6{
-  font-family: "Oswald", sans-serif;
-font-optical-sizing: auto;
-font-weight: 200;
-font-style: normal;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.dropdown-item>a:hover{
+    border: none;
+}
+.dropdown-item > a{
+    color: black;
+    text-decoration: none;
+}
+.dropdown-item,a:active{
+    background-color: white !important;
+}
+.admin{
+    display: block;
+    text-align: right;
+}
+.admin>small>a{
+    color: black;
 }
 .translate {
   display: flex;
@@ -29,7 +47,7 @@ font-style: normal;
 }
 
 .admin>h5>a{
-  color: black;
+  color: orange;
 }
 .word{
   color: orange;
@@ -99,7 +117,9 @@ font-style: normal;
 75%{transform: scale(1.1);}
 100%{transform: scale(1);}  
 }
-
+.ff-form .ff-item{
+  padding-block: 0 !important;
+}
 .word{
   color: orange;
   font-weight: bold;
@@ -107,11 +127,11 @@ font-style: normal;
 
 
 .login {
-    min-height: 100vh;
+    min-height: 50vh;
   }
   
   .bg-image {
-    background-image: url('assets/container-1.webp');
+    background-image: url('./img/form-bg.avif');
     background-size: cover;
     background-position: center;
   }
@@ -171,10 +191,6 @@ font-style: normal;
  }
   /*Footer*/
   @media screen and (max-width:348px) {
-    .break{
-        display: block;
-        margin: 30px;
-    }
     .admin > h3{
       font-size: 9px !important;
   }
@@ -208,10 +224,6 @@ font-style: normal;
 }
   }
   @media screen and (max-width:430px) {
-    .break{
-        display: block;
-        margin: 30px;
-    }
     #call_menu {
       position: fixed;
       bottom: 20px; /* Adjust as needed */
