@@ -17,7 +17,7 @@
     <div id="call_menu">
       <a href="tel:+919307998813"><i class="bi bi-telephone-outbound-fill"></i></a>
     </div>
-   <div class="container my-3 pt-2 admin">
+    <div class="container my-3 pt-2 admin">
       <h5 class="text-center">Admission no <a href="tel:+919307998813" class="text-decoration-none"> <span class="call"><i class="fa-solid fa-phone main_head_call"></i></span> +91 9307998813</a><span class="break"></span> Student helpline  <a href="tel:+919307998813" class="text-decoration-none"><span class="call"><i class="fa-solid fa-phone main_head_call"></i></span>+91 9307998813</a></h5>
     </div>
       <!--Navbar start-->
@@ -55,15 +55,16 @@
                     <li class="dropdown-item"><a href="" class="btn">Arts</a></li>
                     <li class="dropdown-item"><a href="" class="btn">Commerce</a></li>
                   </ul>
-                </li>
+                </li>-->
                 <li class="nav-item dropdown" id="dropdown4">
                   <a href="" class="nav-link mx-lg-2 dropdown-toggle" data-bs-target="#dropdown4" data-bs-toggle="dropdown"><span class="word">U</span>nder graduate</a>
                   <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="" class="btn">BBA</a></li>
                     <li class="dropdown-item"><a href="" class="btn">BA</a></li>
                     <li class="dropdown-item"><a href="" class="btn">B. Com</a></li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown" id="dropdown1">
+                <!--<li class="nav-item dropdown" id="dropdown1">
                   <a class="nav-link mx-lg-2 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#dropdown1" href="#"><span class="word">C</span>A, <span class="word">C</span>S, <span class="word">C</span>WA</a>
                     <ul class="dropdown-menu">
                       <li class="dropdown-item">
@@ -91,9 +92,16 @@
                     <div id="google_element" class="translate"></div>
                     <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate" type="text/javascript"></script>
                     <script>
-                      function loadGoogleTranslate(){
-                        new google.translate.TranslateElement("google_element");
-                      }
+                      function loadGoogleTranslate() {
+                        new google.translate.TranslateElement(
+                          {
+                            pageLanguage: 'en', // Default language
+                            includedLanguages: 'en,hi', // Only English and Hindi
+                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                          }, 
+                        'google_element'
+                      );
+                    }
                     </script>
                   </li>
               </ul>
